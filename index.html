@@ -5,31 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Welcome to the Hackathon Event</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#register">Register</a></li>
+                <li>Created with GPT 4</li>
+            </ul>
+        </nav>
     </header>
     <main>
+        <section id="hero">
+            <div class="container">
+                <h1>Welcome to the 2023 Hunty's AGIs Hackathon</h1>
+            </div>
+        </section>
         <section id="about">
-            <h2>About the Hackathon</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo esse necessitatibus culpa eligendi ab expedita animi quam, impedit voluptate ullam, quae non vitae, facilis sequi labore illo possimus laborum doloremque!</p>
+            <div class="container">
+                <h2>About the Hackathon</h2>
+                <p>Los modelos de texto como GPT3/4 han demostrado la capacidad generativa de las inteligencias artificiales. 
+                    Debemos aprovechar esta creatividad combinada con nuestro análisis humano para crear productos y servicios de gran valor.</p>
+                <h2>Why using AGIs?</h2>
+                <p>Una de las grandes ventajas de estos modelos, es que pueden asumir tareas humanas mucho más especializadas, 
+                    dado que estos tienen una capacidad textual muy similar a la de un humano real. Es decir, podría comportarse como un ser 
+                    humano, siempre y cuando tenga una directriz concreta y bien delimitada.</p>
+            </div>
         </section>
         <section id="schedule">
-            <h2>Event Schedule</h2>
-            <ul>
-                <li>Day 1: Registration and introduction</li>
-                <li>Day 2: Hacking begins</li>
-                <li>Day 3: Final presentations and awards</li>
-            </ul>
+            <div class="container">
+                <h2>Event Schedule</h2>
+                <ul>
+                    <li>Day 1: Registration and introduction</li>
+                    <li>Day 2: Hacking begins</li>
+                    <li>Day 3: Final presentations and awards</li>
+                </ul>
+            </div>
         </section>
         <section id="register">
-            <h2>Register for the Hackathon</h2>
-            <button id="register-btn">Register Now</button>
+            <div class="container">
+                <h2>Register for the Hackathon</h2>
+                <button id="register-btn">Register Now</button>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; Hackathon Event 2023. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; Hackathon Event 2023. All rights reserved.</p>
+        </div>
     </footer>
     <script src="script.js"></script>
 </body>

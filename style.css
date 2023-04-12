@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'SF Pro Display', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -7,40 +13,122 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
-    padding: 1rem;
-    text-align: center;
+    background-color: #082428; /* Pantone: 2706 C */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-header h1 {
-    color: #fff;
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
     margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 1.5rem;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #B576FF; /* Pantone: 528 C */
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #040FD9; /* Pantone: 286 C */
 }
 
 main {
-    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+#hero {
+    background-image: url('hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero h1 {
+    color: #B576FF; /* Pantone: 528 C */
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 h2 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #16006D; /* Pantone: 2745 C */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+section p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #040FD9; /* Pantone: 286 C */
     color: #fff;
     border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    font-weight: 600;
 }
 
 button:hover {
-    background-color: #43A047;
+    background-color: #16006D; /* Pantone: 2745 C */
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #082428; /* Pantone: 2706 C */
     padding: 1rem;
     text-align: center;
+}
+
+footer p {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #B576FF; /* Pantone: 528 C */
 }
