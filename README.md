@@ -1,3 +1,9 @@
 # Hunty's 2023 Hackaweek
 
-Link to Github page: https://huntyjobs.github.io/2023hackaweek
+Simple repo to build a Github page for the 2023 Hackaweek @ Hunty.
+
+Link to Github page: http://hackaweek.hunty.cloud/
+
+***
+
+Made @ Hunty with Love ❤️ 🇨🇴
