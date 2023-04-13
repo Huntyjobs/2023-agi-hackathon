@@ -1,19 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600&display=swap');
-
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'SF Pro Display', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
     color: #333;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+body, p, li, a, input, textarea, button {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
-    background-color: #082428; /* Pantone: 2706 C */
+    background-color: #16006D; 
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -34,7 +40,7 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 1.5rem;
+    margin-right: 1.0;
 }
 
 nav ul li:last-child {
@@ -43,16 +49,12 @@ nav ul li:last-child {
 
 nav a {
     text-decoration: none;
-    color: #B576FF; /* Pantone: 528 C */
+    color: #f4f4f4;
     font-weight: 600;
 }
 
-nav a:hover {
-    color: #040FD9; /* Pantone: 286 C */
-}
-
 main {
-    padding-top: 2rem;
+    background-color: #f4f4f4;
 }
 
 .container {
@@ -62,19 +64,19 @@ main {
 }
 
 #hero {
-    background-image: url('hero.jpg');
+    background-image: url('Generative.png');
     background-size: cover;
     background-position: center;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #hero h1 {
-    color: #B576FF; /* Pantone: 528 C */
+    color: #B576FF;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 500;
     text-align: center;
 }
 
@@ -82,7 +84,7 @@ h2 {
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #16006D; /* Pantone: 2745 C */
+    color: #16006D; 
 }
 
 section {
@@ -90,39 +92,51 @@ section {
 }
 
 section p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.6;
 }
 
 section ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding: 0 2rem;
 }
 
 section ul li {
+    list-style-type: disc;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
     margin-bottom: 0.5rem;
 }
 
-button {
-    background-color: #040FD9; /* Pantone: 286 C */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-weight: 600;
+#register {
+    background-color: #16006D;
+    text-align: center;
+    padding: 10rem;
 }
 
-button:hover {
-    background-color: #16006D; /* Pantone: 2745 C */
+#register h2 {
+    color: #f4f4f4;
+    padding-bottom: 1.5rem;
+}
+
+.register-btn {
+    background-color: #040FD9; /* Pantone: 286 C */
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #B576FF; /* Pantone: 528 C */
 }
 
 footer {
-    background-color: #082428; /* Pantone: 2706 C */
+    background-color: #16006D; /* Pantone: 2706 C */
     padding: 1rem;
     text-align: center;
 }
@@ -130,5 +144,97 @@ footer {
 footer p {
     font-size: 0.875rem;
     font-weight: 400;
-    color: #B576FF; /* Pantone: 528 C */
+    color: #f4f4f4; /* Pantone: 528 C */
 }
+
+#challenges {
+    margin-bottom: 2rem;
+}
+
+.challenges {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.challenge-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.challenge-card {
+    background-color: #F5F2F9;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+}
+
+.challenge-card h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #16006D; /* Pantone: 2745 C */
+}
+
+.challenge-card p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    justify-content: stretch;
+}
+
+.date-location {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.date-location-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.box {
+    position: relative;
+    background-color: #F5F2F9;
+    padding: 1.5rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 1rem);
+    margin-bottom: 1rem;
+}
+
+.box p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 2.3rem;
+    font-weight: 300;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    margin: 0; /* Remove default paragraph margins */
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-top: 1rem;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
